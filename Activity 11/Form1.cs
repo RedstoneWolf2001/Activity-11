@@ -15,7 +15,6 @@ namespace Activity_11
         public Form1()
         {
             InitializeComponent();
-
         }
 
         public static int rolls = 0;
@@ -29,13 +28,13 @@ namespace Activity_11
         {
             rolls++;
 
-            int face1 = die1.rollDie();
-            int face2 = die2.rollDie();
-
-            Num1.Text = face1.ToString();
-            Num2.Text = face2.ToString();
-
-
+            
+            Num1.Text = die1.rollDie().ToString();
+            Num2.Text = die2.rollDie().ToString();
+        
+        
+        
         }
+
     }
 }

@@ -17,8 +17,8 @@ namespace Activity_11
         }
 
         public int rollDie()
-        {            
-            return random.Next(numSides + 1);
+        {
+            return random.Next(1, numSides + 1);
         }
     }
 }
