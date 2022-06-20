@@ -9,7 +9,7 @@ namespace Activity_11
     public class Dice
     {
         private int numSides;
-        private Random random = new Random();
+        private static Random random = new Random();
 
         public Dice(int NumSides)
         {
@@ -17,7 +17,7 @@ namespace Activity_11
         }
 
         public int rollDie()
-        {
+        {            
             return random.Next(1, numSides + 1);
         }
     }
